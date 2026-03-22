@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Release v1.0.0
+    url: https://github.com/tanik-kumar/people-lineage-android/releases/tag/v1.0.0
+    about: Download the latest signed APK from the current release
