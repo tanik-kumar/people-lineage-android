@@ -2,6 +2,8 @@ name: Release
 
 on:
   push:
+    branches:
+      - main
     tags:
       - "v*"
 
@@ -19,6 +21,8 @@ jobs:
       - name: Publish GitHub release
         uses: softprops/action-gh-release@v2
         with:
-          name: People Lineage v${{ github.ref_name }}
-          body_path: release-notes/${{ github.ref_name }}.md
+          tag_name: v1.0.0
+          target_commitish: main
+          name: People Lineage v1.0.0
+          body_path: release-notes/v1.0.0.md
           files: release-assets/people-lineage-v1.0.0-release.apk
